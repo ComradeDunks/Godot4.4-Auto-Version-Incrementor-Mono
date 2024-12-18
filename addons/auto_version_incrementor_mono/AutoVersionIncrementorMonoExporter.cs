@@ -39,6 +39,7 @@ public partial class AutoVersionIncrementorMonoExporter : EditorExportPlugin
             }
             version += build;
             ProjectSettings.SetSetting("application/config/version", version);
+            ProjectSettings.Save();
         }
     }
 
