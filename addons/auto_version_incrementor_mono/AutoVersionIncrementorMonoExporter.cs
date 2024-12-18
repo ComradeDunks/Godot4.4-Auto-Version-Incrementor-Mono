@@ -6,12 +6,13 @@ using System;
 public partial class AutoVersionIncrementorMonoExporter : EditorExportPlugin
 {
     public const string CONFIG_PATH = "res://addons/auto_version_incrementor_mono/settings.cfg";
+    public const string PLUGIN_NAME = "Auto Version Incrementor (Mono)";
 
     public AutoVersionIncrementorMonoExporter() { }
 
     public override string _GetName()
     {
-        return "Auto Version Incrementor Mono";
+        return PLUGIN_NAME;
     }
 
     public override void _ExportBegin(string[] features, bool isDebug, string path, uint flags)
